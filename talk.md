@@ -16,7 +16,7 @@ Open Source Developer
 * prusa, seznam.cz, ubiquiti, ..
 
 <!-- pause -->
-I am old:
+Also a dinasour🦕:
 <!-- column_layout: [1, 1, 1] -->
 
 <!-- column: 0 -->
@@ -39,10 +39,12 @@ I am old:
 Topics
 ---
 
+<!-- font_size: 2 -->
 ## Local AI
+<!-- font_size: 1 -->
 
 <!-- pause -->
-* **GUI/CLI/Web dev:** Points from making native GUI, CLI & Web AI Apps
+* **GUI/CLI/Web:** Points from making native GUI, CLI & Web AI Apps
 <!-- pause -->
 * **Libraries:** Used open sourced tools and libraries
 <!-- pause -->
@@ -64,6 +66,7 @@ Phylosophy
 * Can run offline
 * No tokens limits
 * No censorship (optional)
+* Different models
 
 <!-- end_slide -->
 
@@ -77,7 +80,7 @@ Localy usable models are those with 32b instructions or less that needs to be lo
 Tested on HW:
 
 * Macbook/MacStudio with min. 32GB of RAM
-* Nvidia 5090 with 32GB VRAM 
+* ***Nvidia 5090 with 32GB VRAM***
 * Radeon 6700 with 10GB VRAM (!?!)
 
 <!-- pause -->
@@ -110,6 +113,60 @@ Run on Nvidia RTX 5090 32GB VRAM using Ollama (v0.12.6)
 | gemma3           | 27b          | **~77**  |
 | qwen2.5vl        | 32b          | **~64**  |
 | deepseek-r1      | 32b          | **~61**  |
+
+<!-- end_slide -->
+
+Limitations
+---
+<!-- font_size: 3 -->
+# Memory
+<!-- font_size: 1 -->
+* Smaller models
+* Smaller context window
+* Less parallel context
+
+<!-- pause -->
+## Clustering
+* MB HW
+* Network bottleneck
+* $$$ PRICE $$$
+
+<!-- end_slide -->
+
+Case example
+---
+
+### GPU:
+Nvidia RTX 5090 32GB VRAM
+
+-------
+
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+
+| Model example | |
+| -----         | -----  |
+| ***Model***:        | Qwen2.5 |
+| ***Parameters:***   | 32b |
+| ***Quantization:*** | Q4_K_M |
+
+<!-- column: 1 -->
+
+| App case      | |
+| -----         | -----  |
+| ***Context window***:        | 10 192.tokens |
+| ***Contexts:***   | 2 |
+
+<!-- reset_layout -->
+
+```
+VRAM = MW + (KV * CW * P)
+```
+<!-- pause -->
+
+```
+30GB = 22GB + (0.37MB * 10192 * 2)
+```
 
 <!-- end_slide -->
 
