@@ -330,6 +330,7 @@ Open Source Libs
 * **rusqlite** - https://github.com/rusqlite/rusqlite
 * **rusqlite_migration** - https://github.com/cljoly/rusqlite_migration
 * qdrant-client - https://github.com/qdrant/rust-client
+* memvid-rs - https://github.com/AllenDang/memvid-rs
 
 # System
 * **rust_search_fork** - https://github.com/jjjermiah/Rust_Search/
@@ -337,6 +338,8 @@ Open Source Libs
 * libreoffice-rs - https://github.com/undeflife/libreoffice-rs
 
 <!-- end_slide -->
+
+
 
 
 Questions
