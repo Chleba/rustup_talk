@@ -13,10 +13,11 @@ Open Source Developer
 
 * https://github.com/Chleba
 * netscanner, pixelartor, tui-slides, ..
-* prusa, seznam.cz, ubiquiti, ..
+* prusa, seznam.cz, geewa, ubiquiti, ..
 
 <!-- pause -->
 Also a dinasour🦕:
+<!-- pause -->
 <!-- column_layout: [1, 1, 1] -->
 
 <!-- column: 0 -->
@@ -82,6 +83,7 @@ Tested on HW:
 * Macbook/MacStudio with min. 32GB of RAM
 * ***Nvidia 5090 with 32GB VRAM***
 * Radeon 6700 with 10GB VRAM (!?!)
+* 1x Nvidia H200 with 141GB
 
 <!-- pause -->
 
@@ -137,7 +139,7 @@ Case example
 ---
 
 ### GPU:
-Nvidia RTX 5090 32GB VRAM
+Nvidia RTX 5090 **32GB** VRAM
 
 -------
 
@@ -160,7 +162,7 @@ Nvidia RTX 5090 32GB VRAM
 <!-- reset_layout -->
 
 ```
-VRAM = MW + (KV * CW * P)
+VRAM = MW + (KV * CW * PC)
 ```
 <!-- pause -->
 
@@ -185,13 +187,9 @@ What I'm using for my AI projects
 * SQL
 * bash
 
-<!-- pause -->
-
 ## AI
 * Ollama
 * llama.cpp
-
-<!-- pause -->
 
 <!-- column: 1 -->
 ### DB
@@ -199,8 +197,6 @@ What I'm using for my AI projects
 * qdrant
 * pqvector
 * tantivy (bm25)
-
-<!-- pause -->
 
 <!-- column: 2 -->
 ### Libraries
@@ -215,9 +211,137 @@ What I'm using for my AI projects
 
 <!-- end_slide -->
 
-Limitations
+Showcase #1
 ---
 
-## Memory
+## RAGChunker
+
+Graph RAG chatbot & document chunker.
+
+-----------
+
+<!-- end_slide -->
+
+Showcase #1
+---
+## RAGChunker
+![image:width:100%](ragchunker1.png)
+
+<!-- end_slide -->
+
+Showcase #1
+---
+## RAGChunker
+![image:width:100%](ragchunker2.png)
+
+<!-- end_slide -->
+
+Showcase #1
+---
+## RAGChunker - Tech stack
+
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+#### DB
+* qdrant
+* tantivy
+* sqlite
+
+#### Crates 
+* ratatui
+* **langchain-rust**
+* **rust_search_fork**
+* axum
+* **rusqlite**
+* qdrant-client
+* tokio
+* ...
+
+<!-- column: 1 -->
+
+| model | info |
+| ---   | ---  |
+| Parameters: | 24b |
+| Contexts:   | 3   |
+| Context Window: | 16384 |
+| Tokens/secons | 60 |
+
+<!-- end_slide -->
+
+Showcase #2
+---
+
+## DocExtractor
+
+Formatted data extraction from text or image documents.
+
+---------
+
+<!-- end_slide -->
+
+Showcase #2
+---
+## DocExtractor
+![image:width:100%](docextractor.png)
+
+<!-- end_slide -->
+
+Showcase #2
+---
+##  DocExtractor- Tech stack
+
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+#### DB
+* sqlite
+
+#### Crates 
+* **langchain-rust**
+* axum
+* **rusqlite**
+* **rusqlite_migration**
+* tokio
+* pandoc
+* calamine
+* lettre
+* pdfium-render
+* ...
+
+<!-- column: 1 -->
+
+| model | info |
+| ---   | ---  |
+| Parameters: | 32b |
+| Contexts:   | 2   |
+| Context Window: | 10192 |
+| Tokens/secons | 64 |
 
 
+<!-- end_slide -->
+
+Open Source Libs
+---
+
+# AI
+* **ollama-rs** - https://github.com/pepperoni21/ollama-rs
+* langchain-rust - https://github.com/Abraxas-365/langchain-rust
+
+# DB
+* **rusqlite** - https://github.com/rusqlite/rusqlite
+* **rusqlite_migration** - https://github.com/cljoly/rusqlite_migration
+* qdrant-client - https://github.com/qdrant/rust-client
+
+# System
+* **rust_search_fork** - https://github.com/jjjermiah/Rust_Search/
+* pdfium-render - https://github.com/ajrcarey/pdfium-render
+* libreoffice-rs - https://github.com/undeflife/libreoffice-rs
+
+<!-- end_slide -->
+
+
+Questions
+---
+
+Thank You
+
+https://github.com/Chleba/rustup_talk
