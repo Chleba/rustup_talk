@@ -316,6 +316,57 @@ Showcase #2
 | Context Window: | 10192 |
 | Tokens/secons | 64 |
 
+<!-- end_slide -->
+
+Showcase #3
+---
+
+## DeskVision
+
+Local, Offline AI image search using Ollama with visual models.
+
+---------
+
+<!-- end_slide -->
+
+Showcase #3
+---
+## DeskVision
+![image:width:100%](deskvision.png)
+
+<!-- end_slide -->
+
+Showcase #3
+---
+## DeskVision- Tech stack
+
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+
+#### Crates 
+* **ollama-rs**
+* rust_search_fork 
+* ...
+
+### GUI
+* egui
+* eframe
+* egui_form
+* egui_flex
+* egui_extras
+* open
+* rfd (file dialogs)
+
+
+<!-- column: 1 -->
+
+| model | info |
+| ---   | ---  |
+| Model: | gemma3 |
+| Parameters: | 7b - 32b |
+| Contexts:   | 1-10   |
+| Context Window: | 4192 - 10192 |
+| Tokens/secons | 220 - 64 |
 
 <!-- end_slide -->
 
@@ -337,10 +388,11 @@ Open Source Libs
 * pdfium-render - https://github.com/ajrcarey/pdfium-render
 * libreoffice-rs - https://github.com/undeflife/libreoffice-rs
 
+# GUI / TUI
+* **egui** - https://github.com/emilk/egui
+* **ratatui** - https://github.com/ratatui/ratatui
+
 <!-- end_slide -->
-
-
-
 
 Questions
 ---
