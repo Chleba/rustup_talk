@@ -357,6 +357,9 @@ Showcase #3
 * open
 * rfd (file dialogs)
 
+#### egui themes
+* egui-themer - https://github.com/grantshandy/egui-themer
+
 
 <!-- column: 1 -->
 
